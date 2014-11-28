@@ -20,7 +20,7 @@ public class LockingController {
     @RequestMapping("/locking")
     public @ResponseBody Locking greeting(
             @RequestParam(value="name", required=false, defaultValue="World") String name) {
-        OpenLockResponse response = lockClient.openLock("05175a0f");
+        OpenLockResponse response = lockClient.openLock("0517xxxx");
     	return new Locking("success");
     }
 }
