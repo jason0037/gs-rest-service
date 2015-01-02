@@ -16,7 +16,7 @@ public class LockConfiguration {
 	@Bean
 	public LockClient lockClient(Jaxb2Marshaller marshaller) {
 		LockClient client = new LockClient();
-		client.setDefaultUri("http://101.251.64.6:8090/ws/kssLockService.wsdl");
+		client.setDefaultUri("http://localhost:8090/ws/kssLockService.wsdl");
 		client.setMarshaller(marshaller);
 		client.setUnmarshaller(marshaller);
 		return client;
