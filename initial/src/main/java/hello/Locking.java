@@ -1,11 +1,11 @@
 package hello;
 
 public class Locking {
-    private final String content;
+    private final String result;
     public Locking(String content) {
-        this.content = content;
+        this.result = content;
     }
-    public String getContent() {
-        return content;
+    public String getResult() {
+        return result;
     }
 }
